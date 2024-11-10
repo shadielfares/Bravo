@@ -1,0 +1,30 @@
+Pen-test for127.0.0.1with client<paramiko.client.SSHClient object at 0x705cb37ff2c0>{
+    "user2": {
+        "password": "password2",
+        "status": "failed"
+    },
+    "chadeng": {
+        "password": "Shadi8275",
+        "status": "success"
+    }
+}
+Port Scan results for127.0.0.1on port3000{
+    "host": "127.0.0.1",
+    "open_ports": [
+        {
+            "port": 3000,
+            "protocol": "tcp",
+            "name": "http"
+        }
+    ]
+}
+Port Scan results for127.0.0.1on port3000{
+    "host": "127.0.0.1",
+    "open_ports": [
+        {
+            "port": 3000,
+            "protocol": "tcp",
+            "name": "http"
+        }
+    ]
+}
