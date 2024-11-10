@@ -24,3 +24,7 @@ yarn-debug.log*
 yarn-error.log*
 
 ./back-end/model/.env
+./back-end/model/*.env
+./back-end/model/*.env.example
+./back-end/model/ *.env.local
+./back-end/model/*.env.staging
