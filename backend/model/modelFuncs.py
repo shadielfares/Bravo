@@ -10,15 +10,14 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = openai_api_key
 
 def generate_report(vulnerability_data):
-    prompt = f"Generate a detailed cybersecurity report based on these vulnerabilities:\n{vulnerability_data}"
-    
-    response = openai.Completion.create(
-        engine="text-davinci-003",  # You can choose other models if preferred
-        prompt=prompt,
-        max_tokens=1000,
-        temperature=0.5
-    )
-    return response.choices[0].text.strip()
+
+    response = openai.ChatCompletion.create(
+            model="gpt-4o-mini",  # You can choose other models if preferred
+            messages = [{"role": "user", "content": f"Generate a detailed cybersecurity report based on these vulnerabilities:{vulnerability_data}"}],
+            max_tokens=1000,
+            temperature=0.5
+            )
+    return response
 
 sample_data = """
 Vulnerability: SQL Injection
