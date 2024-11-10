@@ -6,7 +6,7 @@ def scan_ports(target, port):
 
     print(f"Scanning {target} on port {port}...")
 
-    nm.scan(target, str(port))  
+    nm.scan(target, str(port)) 
 
     scan_results = {}
 

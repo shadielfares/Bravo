@@ -9,15 +9,15 @@ load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = openai_api_key
 
-def generate_report(vulnerability_data):
+def generate_report(port_scan_results, vulnerability_results):
 
     response = openai.ChatCompletion.create(
             model="gpt-4o-mini",  # You can choose other models if preferred
-            messages = [{"role": "user", "content": f"Generate a detailed cybersecurity report based on these vulnerabilities:{vulnerability_data}"}],
+            messages = [{"role": "user", "content": f"Generate a detailed cybersecurity report based on these brute force credential attempt results:{vulnerability_results}, and these port scan results: {port_scan_results}"}],
             max_tokens=1000,
             temperature=0.5
             )
-    return response
+    return response['choices'][0]['message']['content']
 
 sample_data = """
 Vulnerability: SQL Injection
@@ -25,9 +25,9 @@ Severity: High
 Description: Allows SQL code injection through user inputs.
 Recommendation: Implement input validation and use parameterized queries.
 """
-print(generate_report(sample_data))
 
-def create_pdf(report_text, file_path="cybersecurity_report.pdf"):
+
+def create_pdf(report_text, file_path="./cybersecurity_report.pdf"):
     c = canvas.Canvas(file_path, pagesize=letter)
     width, height = letter
 
