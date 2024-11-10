@@ -3,6 +3,8 @@
 ## Description
 HackMe is designed to help startups ensure the safety of their websites by conducting comprehensive security assessments. The application performs port scans and brute-force SSH tests to identify potential vulnerabilities, allowing companies to address security issues proactively and read the results by a well-formatted report.
 
+This project was completed and submitted to MEC 2024.
+
 ## Features
 - 🛡️ **Port Scanning**: Identifies open ports on the target system.
 - 🔐 **Brute-force SSH Testing**: Attempts multiple login combinations to test for weak credentials.
@@ -41,11 +43,5 @@ Follow these steps to set up and run the application.
    npm start
    ```
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
-
-## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 For more information, visit the [HackMe repository](https://github.com/shadielfares/HackMe).
