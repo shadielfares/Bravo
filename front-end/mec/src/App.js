@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Test from './test.js';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       </div>
       <div className="Content">
         <div className="Welcome">
-          
+          <Test />
         </div>
       </div>
     </div>
