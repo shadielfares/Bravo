@@ -1,0 +1,77 @@
+.App {
+  
+}
+
+.Content{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.backgroundVideo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: blur(6px) brightness(100%);
+}
+
+.Welcome{
+  position: relative;
+  z-index: 1;
+  color: snow;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35vh;
+}
+
+.box{
+  width: 45%;
+  border-radius: 1.5vw;
+  background-color:rgba(0, 0, 0, 0.550);
+}
+
+.input-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.link-input{
+  background: transparent; 
+  border-color: snow;
+  border-radius: 0.5vw;
+  color: snow;
+  font-size: 1.5vw;
+  width: 80%;
+}
+
+.link-submit{
+  color: snow;
+  width: 15%;
+  padding-top:0.5%;
+  padding-bottom:0.5%;
+  margin-top: 2.5%;
+  font-size: 1.2vw;
+  font-weight: 600;
+  background-color: #149414;
+  border-color: transparent;
+  border-style:solid;
+  border-radius: 0.5vw;
+  color: "#149414"
+}
+
+.link-submit:hover{
+  cursor: pointer;
+}
+

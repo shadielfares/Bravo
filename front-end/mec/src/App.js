@@ -1,17 +1,16 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom"
 import logo from './logo.svg';
-import './App.css';
 import Test from './test.js';
+import Main from './main.js';
 
 function App() {
   return (
     <div className="App">
-      <div className="Taskbar">
-      </div>
-      <div className="Content">
-        <div className="Welcome">
-          <Test />
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/dev" element={<Test />} />
+      </Routes>
     </div>
   );
 }

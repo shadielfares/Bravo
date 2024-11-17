@@ -12,11 +12,18 @@ const Test = () => {
 
     return(
         <div>
-            <form onSubmit={testSubmit}>
-                <input name="user" placeholder="Username" onChange={(e) => setUserName(e.target.value)} />
-                <input name="password" placeholder="Password"  onChange={(e) => setPassword(e.target.value)} />
-                <button type="submit">Submit</button>
-            </form>
+            <div className="Taskbar"></div>
+            <div className="Content">
+                <div className="Welcome">
+                    <div>
+                        <form onSubmit={testSubmit}>
+                            <input name="user" placeholder="Username" onChange={(e) => setUserName(e.target.value)} />
+                            <input name="password" placeholder="Password"  onChange={(e) => setPassword(e.target.value)} />
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
