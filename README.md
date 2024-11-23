@@ -1,4 +1,4 @@
-# HackMe
+# HackMe - MEC Winner 🏆
 
 ## Description
 HackMe is designed to help startups ensure the safety of their websites by conducting comprehensive security assessments. The application performs port scans and brute-force SSH tests to identify potential vulnerabilities, allowing companies to address security issues proactively and read the results by a well-formatted report.
